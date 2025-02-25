@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: whitesmoke;
+            min-width: 700px;
+            min-height: 750px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .frame {
+            margin-top: 10%;
+            border: 2px #584214 solid;
+            background: #c5bcff;
+            padding: 10px;
+        }
+
+        .grid-container header {
+            background: #f2db6fc6
+        }
+
+        .grid-container hr {
+            border: 2px #5b4915 solid;
+        }
+
+        a {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .img {
+            height: 300px;
+        }
+
+        .item {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            margin: 15px;
+            font-size: 35px;
+            background-color: #f2b3fec9;
+            padding: 10px;
+        }
+
+        .date {
+            margin: 10px;
+            padding: 5px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        }
+
+        .title {
+            font-size: 40pt;
+            font-weight: bold;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="frame">
+            <header>
+                <div class="title">Dear {{name}}</div>
+            </header>
+
+            <main>
+                <h2 class="item">
+                    <i class="fa fa-bell" aria-hidden="true" style="background-color:#f2b3fec9">Sales are coming!</i>
+                </h2>
+                <h2 class="item" style="background-color:transparent; margin: 15px">Up to -50% on hamsters!</h2>
+                <hr />
+                <p class="date" style="color:#1e890a">25.02.2025</p>
+                <p class="date" style="color:#861111">25.03.2025</p>
+                <img class="img" src="https://cdn-icons-png.flaticon.com/512/6807/6807900.png" />
+                <p class="item">Pets are waiting for you to come pick them up!</p>
+            </main>
+
+            <footer>
+                <hr />
+                <a href="http://bumblebee.somee.com/">For more details, visit our website to get a great bargain!</a>
+                <p></p>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

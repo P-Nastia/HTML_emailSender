@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: whitesmoke;
+            min-width: 700px;
+            min-height: 750px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+            .grid-container .frame {
+                margin-top: 10%;
+                border: 2px #584214 solid;
+                background: #c5bcff;
+                padding: 10px;
+            }
+
+            .grid-container header {
+                background: rgba(247, 231, 102, 0.6235294118);
+            }
+
+                .grid-container header .title {
+                    font-size: 40pt;
+                    font-weight: bold;
+                    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+                    padding: 10px;
+                }
+
+        .item {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            margin: 15px;
+            font-size: 35px;
+            background-color: rgba(248, 153, 153, 0.5568627451);
+            padding: 10px;
+        }
+
+        .img {
+            height: 400px;
+            width: auto;
+        }
+
+        .grid-container footer hr {
+            border: 2px #5b4915 solid;
+        }
+
+        a {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="frame">
+            <header>
+                <div class="title">Dear {{name}}</div>
+            </header>
+
+            <main>
+                <h2 class="item">
+                    <i class="fa fa-birthday-cake" aria-hidden="true"> We are pleased to congrat you with your birthday!</i>
+                </h2>
+                <img class="img" src="https://png.pngtree.com/recommend-works/png-clipart/20250117/ourmid/pngtree-happy-birthday-happy-png-image_15235586.png" />
+            </main>
+
+            <footer>
+                <hr />
+                <a href="http://bumblebee.somee.com/">Visit our website to get a discount!</a>
+                <p></p>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
