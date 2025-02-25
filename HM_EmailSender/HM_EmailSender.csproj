@@ -12,4 +12,16 @@
     <PackageReference Include="NETCore.MailKit" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="EmailDetails\birthdayCongrats.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EmailDetails\notification.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EmailDetails\sales.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

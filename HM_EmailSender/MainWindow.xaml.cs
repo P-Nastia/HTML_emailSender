@@ -29,17 +29,17 @@ namespace HM_EmailSender
 
                 if (this.birthdayRB.IsChecked == true)
                 {
-                    htmlFilePath = @"D:\VisualStudioProjects\HTML\htmlEmailSender\htmlEmailSender\EmailDetails\birthdayCongrats.html";
+                    htmlFilePath = @"EmailDetails\birthdayCongrats.html";
                     messageConf.Subject = "Happy birthday!";
                 }
                 else if (this.salesRB.IsChecked == true)
                 {
-                    htmlFilePath = @"D:\VisualStudioProjects\HTML\htmlEmailSender\htmlEmailSender\EmailDetails\sales.html";
+                    htmlFilePath = @"EmailDetails\sales.html";
                     messageConf.Subject = "Sales coming!";
                 }
                 else
                 {
-                    htmlFilePath = @"D:\VisualStudioProjects\HTML\htmlEmailSender\htmlEmailSender\EmailDetails\notification.html";
+                    htmlFilePath = @"EmailDetails\notification.html";
                     messageConf.Subject = "Notification";
                 }
                 messageConf.Body = File.ReadAllText(htmlFilePath, Encoding.UTF8);
